@@ -28,7 +28,7 @@
 	padding-top:30px;
 
 }
-.newsList a{
+.newsList li a{
 	display: inline-block;
 	width: 570px !important;
 	overflow: hidden;
