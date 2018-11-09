@@ -1,0 +1,110 @@
+.bigImgDiv{
+	text-align: center;
+}
+
+.bigImg{
+	width: 100%;
+}
+.con{
+	margin-top: 20px;
+}
+.Conleft{
+	width: 280px;
+	float: left;
+}
+.leftTopTitle{
+	font-size: 20px;
+	line-height: 30px;
+	width: 170px;
+	padding-left: 30px;
+	border-bottom: 3px solid #F7842B;
+	margin-top:30px;
+}
+.leftfenlei{
+	border-top: 1px solid #ccc;
+	padding-left: 0;
+}
+.leftfenlei li{
+	height: 48px;
+    border-bottom: 1px dashed #8894ac;
+    margin: 0 auto;
+    background: url(../img/icons.jpg) 8px center no-repeat;
+    text-indent: 20px;
+    font: 16px/48px '脣脦脤氓'
+}
+.fynews{
+	width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    height: 39px;
+    background-color: #F7F7F7;
+}
+.fynews img{
+	float: left;
+	padding-bottom: 0px;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 0px;
+}  
+.fynewsnr{
+	width: 1100px;
+	margin-left: 100px;
+	padding-left: 0;
+}
+.fynewsnr li{
+	width: 240px;
+	padding-left: 20px;
+    float: left;
+    background: url(../img/newsd.jpg) no-repeat 0 50%;
+    margin: 0 auto;
+    line-height: 39px;
+    text-align: left;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}  
+
+.leftBottom{
+
+}
+.leftBottom img{
+	width: 280px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+h4{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: #333;
+}
+.leftBottom p{
+	padding-left: 10px;
+	font-size: 16px;
+	color: #999;
+
+}
+.leftBottom p span{
+	color:#333;
+}
+.Conright{
+	float: left;
+	padding-left:40px;
+	width: 900px;
+}
+.rightCon{
+	border-top: 1px solid #ccc;
+	width: 100%;
+}
+
+.conPic img{
+	height: 500px !important;
+}
+.conlunbo{
+	padding:30px;
+	background: #FFF !important;
+}
+.carousel-control.left,.carousel-control.right{
+	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+}

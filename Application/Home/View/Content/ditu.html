@@ -1,0 +1,72 @@
+<include file="Public/header" webtitle="电子地图_{$info.company}"/>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+
+<div class="main">
+	<div class="bigImgDiv">
+		<img src="__PUBLIC__/Uploads/{$photodata[12].photouri}" alt="" class="bigImg">
+	</div>
+	<div class="fynews">
+		<div class="w">
+			<img src="__PUBLIC__/img/fynews.jpg" alt="">
+			<ul class="fynewsnr">
+				<foreach name = "tuijiannews" item = "vo">
+					<li><a href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}">{$vo.title}</a></li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+	<div class="w con">
+		<div class="Conleft">
+			<div class="leftTop">
+				<div class="leftTopTitle">关于我们</div>
+				<ul class="leftfenlei">
+					<li><a href="{:U('Home/Content/product',array('classification'=>3,'fenlei'=>1))}">无缝钢管</a></li>
+					<li><a href="{:U('Home/Content/product',array('classification'=>4,'fenlei'=>2))}">精密钢管</a></li>
+					<li><a href="{:U('Home/Content/product',array('classification'=>5,'fenlei'=>3))}">合金钢管</a></li>
+				</ul>
+				<div class="leftTopTitle">钢管加工</div>
+				<ul class="leftfenlei">
+					<li><a href="{:U('Home/Content/product',array('classification'=>8,'fenlei'=>4))}">自动切割</a></li>
+					<li><a href="{:U('Home/Content/product',array('classification'=>9,'fenlei'=>5))}">锯床切割</a></li>
+					<li><a href="{:U('Home/Content/product',array('classification'=>10,'fenlei'=>6))}">钢管倒角</a></li>
+				</ul>
+			</div>
+			<div class="leftBottom">
+				<div class="leftTopTitle">联系方式</div>
+				<img src="__PUBLIC__/Uploads/{$photodata[8].photouri}" alt="">
+				<h4>{$info.company}</h4>
+				<p><span>联系人：</span>{$info.people}</p>
+				<p><span>QQ：</span>{$info.qq}</p>
+				<p><span>电话：</span>{$info.phone}</p>
+				<p><span>微信：</span>{$info.wetch}</p>
+				<p><span>邮箱：</span>{$info.email}</p>
+				<p><span>网址：</span>{$info.url}</p>
+				<p><span>地址：</span>{$info.address}</p>
+			</div>
+		</div>
+		<div class="Conright">
+			<div class="leftTopTitle">联系方式</div>
+			<div class="rightCon" style="padding: 20px;">
+				 <div id="mapCanvas" class="map-canvas no-margin" style="height: 800px; width: 800px">
+		            <script type="text/javascript">
+		                var map = new BMap.Map("mapCanvas"); // 创建Map实例
+		                var point = new BMap.Point("{$info.jingdu}", "{$info.weidu}"); // 创建点坐标
+		                map.centerAndZoom(point, 15); // 初始化地图,设置中心点坐标和地图级别。
+		                map.enableScrollWheelZoom(); //启用滚轮放大缩小
+		                //添加缩放控件
+		                map.addControl(new BMap.NavigationControl());
+		                map.addControl(new BMap.ScaleControl());
+		                map.addControl(new BMap.OverviewMapControl());
+
+		                var marker = new BMap.Marker(point); // 创建标注
+		                map.addOverlay(marker); // 将标注添加到地图中
+		                var infoWindow = new BMap.InfoWindow("{$info.company}<br/>联系电话：{$info.phone}"); // 创建信息窗口对象
+		                marker.openInfoWindow(infoWindow);
+		            </script>
+		        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="Public/footer" />

@@ -1,0 +1,200 @@
+<include file="Public/header" webtitle="{$info.keywords}{$info.company}"/>
+<link rel="stylesheet" href="__PUBLIC__/css/index.css">
+		<div class="main">
+			<!--轮播图-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img class="center-block" src="__PUBLIC__/Uploads/{$photodata[1].photouri}" alt="...">
+			      <div class="carousel-caption">
+			        one
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img class="center-block" src="__PUBLIC__/Uploads/{$photodata[2].photouri}" alt="...">
+			      <div class="carousel-caption">
+			        two
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img class="center-block" src="__PUBLIC__/Uploads/{$photodata[3].photouri}" alt="...">
+			      <div class="carousel-caption">
+			        three
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+			<!-- 公司简介 -->
+			<div class="gsjj w">
+				<div class="gsjjleft">
+					<div class="gsjjTitle">
+						<p class="gsjjTitleText">公司简介</p>
+						<p class="gd"><a href="{:U('Home/Content/index',array('classification'=>1))}">更多>></a></p>
+					</div>
+					<div class="gsjjCon">
+						<img src="__PUBLIC__/Uploads/{$photodata[4].photouri}" class="gsjjIcon">
+						<div class="gsjjConText">
+							{$info.jianjie}
+						</div>
+					</div>
+				</div>
+				<div class="gsjjright">
+					<div class="gsjjTitle">
+						<p class="gsjjTitleText">联系方式</p>
+						<p class="gd"><a href="{:U('Home/Content/lianxi')}">更多>></a></p>
+					</div>
+					<div class="lxwmCon">
+						<h3>{$info.company}</h3>
+						<p><span>联系人：</span>{$info.people}</p>
+						<p><span>联系电话：</span>{$info.phone}&nbsp;&nbsp;{$info.tell}</p>
+						<p><span>QQ：</span>{$info.qq}</p>
+						<p><span>微信：</span>{$info.wetch}</p>
+						<p><span>地址：</span>{$info.address}</p>
+						<p><span>销售：</span>{$info.protact}</p>
+						<p><span>扫码关注我们</span></p>
+						<img src="__PUBLIC__/Uploads/{$photodata[5].photouri}" alt="">
+					</div>
+				</div>	
+			</div>
+			<!-- 产品中心 -->
+			<div class="cpzx w">
+				<div class="gsjjTitle">
+					<p class="gsjjTitleText">产品中心</p>
+					<p class="gd"><a href="{:U('Home/Content/product',array('classification'=>3,'fenlei'=>1))}">更多>></a></p>
+				</div>
+				<div class="cpzxLeft">
+					<ul class="tab">
+				        <li class="tab-item bgs">无缝钢管</li>
+				        <li class="tab-item bgs">精密钢管</li>
+				        <li class="tab-item bgs">合金钢管</li>
+				    </ul>
+				</div>
+				<div class="product">
+				    <div class="mains selected">
+				    	<foreach name = "wufeng" item = "vo">
+				    		<div class="chzsicon">
+				        	<img src="__PUBLIC__/Uploads/{$vo.picname}" alt="">
+				    		<p>无缝钢管</p>
+				    	</div>
+				    	</foreach>
+				    </div>
+				     <div class="mains">
+				    	<foreach name = "jingmi" item = "vo">
+				    		<div class="chzsicon">
+				        	<img src="__PUBLIC__/Uploads/{$vo.picname}" alt="">
+				    		<p>精密钢管</p>
+				    	</div>
+				    	</foreach>
+				    </div>
+				     <div class="mains">
+				    	<foreach name = "hejin" item = "vo">
+				    		<div class="chzsicon">
+				        	<img src="__PUBLIC__/Uploads/{$vo.picname}" alt="">
+				    		<p>合金钢管</p>
+				    	</div>
+				    	</foreach>
+				    </div>
+				 </div>
+			</div>
+			<!-- 产品中心2 -->
+			<div class="cpzx w">
+				<div class="gsjjTitle">
+					<p class="gsjjTitleText">钢管加工</p>
+					<p class="gd"><a href="{:U('Home/Content/product',array('classification'=>8,'fenlei'=>4))}">更多>></a></p>
+				</div>
+				<div class="cpzxLeft">
+					<ul class="tabs">
+				        <li class="tab-item bgs">锯床切割</li>
+				        <li class="tab-item bgs">自动切割</li>
+				        <li class="tab-item bgs">钢管倒角</li>
+				    </ul>
+				</div>
+				<div class="products">
+				    <div class="mains selected">
+				    	<foreach name = "juchuang" item = "vo">
+				    		<div class="chzsicon">
+				        	<img src="__PUBLIC__/Uploads/{$vo.picname}" alt="">
+				    		<p>锯床切割</p>
+				    	</div>
+				    	</foreach>
+				    </div>
+				     <div class="mains">
+				    	<foreach name = "zidong" item = "vo">
+				    		<div class="chzsicon">
+				        	<img src="__PUBLIC__/Uploads/{$vo.picname}" alt="">
+				    		<p>自动切割</p>
+				    	</div>
+				    	</foreach>
+				    </div>
+				     <div class="mains">
+				    	<foreach name = "daojiao" item = "vo">
+				    		<div class="chzsicon">
+				        	<img src="__PUBLIC__/Uploads/{$vo.picname}" alt="">
+				    		<p>钢管倒角</p>
+				    	</div>
+				    	</foreach>
+				    </div>
+				 </div>
+			</div>
+			<!-- 底部文章列表 -->
+			<div class="list w">
+				<div class="listOne">
+					<div class="gsjjTitle">
+						<p class="gsjjTitleText">新闻中心</p>
+						<p class="gd"><a href="{:U('Home/Content/newsList',array('classification'=>6))}">更多>></a></p>
+					</div>
+					<div class="listCon">
+						<ul>
+							<foreach name = "news" item = "vo">
+								<li><a href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}">{$vo.title}</a><span>{$vo.time}</span></li>
+							</foreach>
+						</ul>
+					</div>
+				</div>
+				<div class="listOne gsjjTitleTextZhong">
+					<div class="gsjjTitle">
+						<p class="gsjjTitleText ">钢管知识</p>
+						<p class="gd"><a href="{:U('Home/Content/newsList',array('classification'=>6))}">更多>></a></p>
+					</div>
+					<div class="listCon">
+						<ul>
+							<foreach name = "zhishi" item = "vo">
+								<li><a href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}">{$vo.title}</a><span>{$vo.time}</span></li>
+							</foreach>
+						</ul>
+					</div>
+				</div>
+				<div class="listOne">
+					<div class="gsjjTitle">
+						<p class="gsjjTitleText">行业动态</p>
+						<p class="gd"><a href="{:U('Home/Content/newsList',array('classification'=>7))}">更多>></a></p>
+					</div>
+					<div class="listCon">
+						<ul>
+							<foreach name = "dongtai" item = "vo">
+								<li><a href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}">{$vo.title}</a><span>{$vo.time}</span></li>
+							</foreach>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+<include file="Public/footer" />

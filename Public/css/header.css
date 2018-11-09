@@ -1,0 +1,152 @@
+.content{}
+.w{
+	width: 1200px;
+	margin:0 auto;
+}
+.bgs{
+	background: #003886 !important;
+}
+
+
+.header{
+	
+}
+.header-top{
+	width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: url("../img/topbg.jpg");
+    border-bottom: solid 1px #ddd;
+}
+.header-top-left{
+	float: left;
+	padding-left: 30px
+}
+.header-top-right{
+	float: right;
+	padding-right:30px;
+}
+.header-top-right a{
+	padding-left: 30px
+}
+.logo{
+	text-align: center;
+	margin: 0 auto
+}
+.nav>li>a{
+	color: #ffffff !important;
+}
+.open>a{
+	background: red !important;
+}
+.item{
+	text-align: center;
+}
+.navbar{
+	margin-bottom: 0;
+}
+/* 底部 */
+.footer{
+	clear: both;
+	height: 300px;
+	background-color: #064BB2;
+}
+.footernav{
+	color: #FFF;
+}
+.footernav ul{
+	padding-top: 30px;
+	list-style: none;
+	float: left;
+}
+.footernav li{
+	line-height: 30px;
+}
+.footernav a{
+	color: #FFF
+}
+.navbars{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.gsjjright{
+	float: left;
+	width: 470px;
+	margin-left: 30px
+}
+ul li{
+list-style-type:none;
+}
+.lxwmCons{
+	text-align: center;
+	height: 240px;
+	line-height: 240px;
+}
+.dibu{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	background-color: rgb(0,0,0,0.2);
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+}
+
+
+
+	.leftbox {
+		text-align: center;
+		position: fixed;
+		left: 10px;
+		top: 450px;
+		_position: absolute;
+		_top: expression(eval(document.documentElement.scrollTop+150));
+		_left: expression(eval(document.documentElement.scrollLeft));
+		background:rgb(125, 125, 185);
+		border-radius: 10px;
+	}
+	.leftbox p{
+		padding: 0;
+		color: #fff;
+		font-size: 12px;
+	}
+
+
+#div1{
+        z-index:9999;
+		display: none;
+		position: fixed;
+		left:30%;
+		top:30%;
+		width:464px;
+		height:301px;
+		background:#7D7Db9;
+		text-align: center;
+
+}
+.title{
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(125, 125, 185);
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+.con{
+	padding: 10px;
+}
+#open{
+
+position: absolute;
+
+top:50%;
+
+left:50%;
+
+width:100px;
+
+height:50px;
+
+}
