@@ -10,7 +10,7 @@
 			<img src="__PUBLIC__/img/fynews.jpg" alt="">
 			<ul class="fynewsnr">
 				<foreach name = "tuijiannews" item = "vo">
-					<li><a href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}">$vo.title}</a></li>
+					<li><a href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}">{$vo.title}</a></li>
 				</foreach>
 			</ul>
 		</div>

@@ -135,7 +135,7 @@
 		<div class="w">
 			<img src="/steel/Public/img/fynews.jpg" alt="">
 			<ul class="fynewsnr">
-				<?php if(is_array($tuijiannews)): foreach($tuijiannews as $key=>$vo): ?><li><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>">$vo.title}</a></li><?php endforeach; endif; ?>
+				<?php if(is_array($tuijiannews)): foreach($tuijiannews as $key=>$vo): ?><li><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>"><?php echo ($vo["title"]); ?></a></li><?php endforeach; endif; ?>
 			</ul>
 		</div>
 	</div>
