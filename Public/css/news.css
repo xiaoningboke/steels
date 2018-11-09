@@ -28,6 +28,14 @@
 	padding-top:30px;
 
 }
+.newsList a{
+	display: inline-block;
+	width: 570px !important;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
 .page{
     padding-top: 20px;
     padding-bottom: 15px;

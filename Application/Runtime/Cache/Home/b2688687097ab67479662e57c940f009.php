@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>[webtitle]</title>
+	<title><?php echo ($data["title"]); ?>_<?php echo ($info["company"]); ?></title>
 		<!-- SEO -->
 	<meta name="description" content="<?php echo ($info["content"]); ?>" />
 	<meta name="keywords" content="<?php echo ($info["keywords"]); ?>" />
@@ -174,7 +174,7 @@
 			<div class="rightCon">
 				<div class="newsList">
 					<ul class="news tuijian">
-						<?php if(is_array($tuijian)): foreach($tuijian as $key=>$vo): ?><li><span>[推荐]</span><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>"><?php echo ($vo["title"]); ?></a><span class="newsTime"><?php echo ($vo["time"]); ?></span></li><?php endforeach; endif; ?>
+						<?php if(is_array($tuijian)): foreach($tuijian as $key=>$vo): ?><li><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>"><span>[推荐]</span><?php echo ($vo["title"]); ?></a><span class="newsTime"><?php echo ($vo["time"]); ?></span></li><?php endforeach; endif; ?>
 					</ul>
 					<ul class="news">
 						<?php if(is_array($list)): foreach($list as $key=>$vo): ?><li><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>"><?php echo ($vo["title"]); ?></a><span class="newsTime"><?php echo ($vo["time"]); ?></span></li><?php endforeach; endif; ?>
