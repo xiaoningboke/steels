@@ -54,9 +54,9 @@
 			<div class="logo w">
 				<img src="/steel/Public/Uploads/<?php echo ($photodata[0]["photouri"]); ?>" alt="">
 			</div>
-			<div class="nav">
-				<nav class="navbar navbar-default bgs ww">
-				  <div class="container-fluid w bg" >
+			<div class="nav w">
+				<nav class="navbar navbar-default  ww">
+				  <div class="container-fluid w " >
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
@@ -126,7 +126,7 @@
 			</div>
 		</div>
 <link rel="stylesheet" href="/steel/Public/css/index.css">
-		<div class="main">
+		<div class="main w">
 			<!--轮播图-->
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
@@ -207,7 +207,7 @@
 					<p class="gd"><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">更多>></a></p>
 				</div>
 				<div class="cpzxLeft">
-					<ul class="tab">
+					<ul class="tab"  style="padding-left: 0">
 				        <li class="tab-item bgs">无缝钢管</li>
 				        <li class="tab-item bgs">精密钢管</li>
 				        <li class="tab-item bgs">合金钢管</li>
@@ -215,22 +215,28 @@
 				</div>
 				<div class="product">
 				    <div class="mains selected">
-				    	<?php if(is_array($wufeng)): foreach($wufeng as $key=>$vo): ?><div class="chzsicon">
-				        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
-				    		<p>无缝钢管</p>
-				    	</div><?php endforeach; endif; ?>
+				    	<?php if(is_array($wufeng)): foreach($wufeng as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
+						    		<div class="chzsicon">
+						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						    		<p>无缝钢管</p>
+						    	</div>
+						    </a><?php endforeach; endif; ?>
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($jingmi)): foreach($jingmi as $key=>$vo): ?><div class="chzsicon">
-				        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
-				    		<p>精密钢管</p>
-				    	</div><?php endforeach; endif; ?>
+				    	<?php if(is_array($jingmi)): foreach($jingmi as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
+						    		<div class="chzsicon">
+						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						    		<p>精密钢管</p>
+						    	</div>
+						    </a><?php endforeach; endif; ?>
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($hejin)): foreach($hejin as $key=>$vo): ?><div class="chzsicon">
-				        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
-				    		<p>合金钢管</p>
-				    	</div><?php endforeach; endif; ?>
+				    	<?php if(is_array($hejin)): foreach($hejin as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
+						    		<div class="chzsicon">
+						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						    		<p>合金钢管</p>
+						    	</div>
+						    </a><?php endforeach; endif; ?>
 				    </div>
 				 </div>
 			</div>
@@ -241,7 +247,7 @@
 					<p class="gd"><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">更多>></a></p>
 				</div>
 				<div class="cpzxLeft">
-					<ul class="tabs">
+					<ul class="tabs" style="padding-left: 0">
 				        <li class="tab-item bgs">锯床切割</li>
 				        <li class="tab-item bgs">自动切割</li>
 				        <li class="tab-item bgs">钢管倒角</li>
@@ -249,22 +255,28 @@
 				</div>
 				<div class="products">
 				    <div class="mains selected">
-				    	<?php if(is_array($juchuang)): foreach($juchuang as $key=>$vo): ?><div class="chzsicon">
-				        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
-				    		<p>锯床切割</p>
-				    	</div><?php endforeach; endif; ?>
+				    	<?php if(is_array($juchuang)): foreach($juchuang as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">
+						    		<div class="chzsicon">
+						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						    		<p>锯床切割</p>
+						    	</div>
+						    </a><?php endforeach; endif; ?>
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($zidong)): foreach($zidong as $key=>$vo): ?><div class="chzsicon">
-				        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
-				    		<p>自动切割</p>
-				    	</div><?php endforeach; endif; ?>
+				    	<?php if(is_array($zidong)): foreach($zidong as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">
+						    		<div class="chzsicon">
+						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						    		<p>自动切割</p>
+						    	</div>
+						    </a><?php endforeach; endif; ?>
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($daojiao)): foreach($daojiao as $key=>$vo): ?><div class="chzsicon">
-				        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
-				    		<p>钢管倒角</p>
-				    	</div><?php endforeach; endif; ?>
+				    	<?php if(is_array($daojiao)): foreach($daojiao as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">
+						    		<div class="chzsicon">
+						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						    		<p>钢管倒角</p>
+						    	</div>
+						    </a><?php endforeach; endif; ?>
 				    </div>
 				 </div>
 			</div>
@@ -276,7 +288,7 @@
 						<p class="gd"><a href="<?php echo U('Home/Content/newsList',array('classification'=>6));?>">更多>></a></p>
 					</div>
 					<div class="listCon">
-						<ul>
+						<ul  style="padding-left: 0">
 							<?php if(is_array($news)): foreach($news as $key=>$vo): ?><li><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>"><?php echo ($vo["title"]); ?></a><span><?php echo ($vo["time"]); ?></span></li><?php endforeach; endif; ?>
 						</ul>
 					</div>
@@ -357,7 +369,7 @@
 			<div class="dibu">页面版权所有：<?php echo ($info["company"]); ?> &nbsp;&nbsp;<?php echo ($info["beian"]); ?> &nbsp;&nbsp;网站建设：千宇软件</div>
 		</div>
 	</div>
-
+<?php echo ($info["tongji"]); ?>
 
 <div id="rightArrow"><a href="javascript:;" title="在线客户"></a></div>
 <div id="floatDivBoxs">
