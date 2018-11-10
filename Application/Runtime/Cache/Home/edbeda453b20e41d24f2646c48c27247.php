@@ -54,9 +54,9 @@
 			<div class="logo w">
 				<img src="/steel/Public/Uploads/<?php echo ($photodata[0]["photouri"]); ?>" alt="">
 			</div>
-			<div class="nav">
-				<nav class="navbar navbar-default bgs ww">
-				  <div class="container-fluid w bg" >
+			<div class="nav w">
+				<nav class="navbar navbar-default  ww">
+				  <div class="container-fluid w " >
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
@@ -127,10 +127,8 @@
 		</div>
 <link rel="stylesheet" href="/steel/Public/css/news.css">
 <div class="main">
-	<div class="bigImgDiv">
-		<?php if(($title == '钢管知识') ): ?><img src="/steel/Public/Uploads/<?php echo ($photodata[9]["photouri"]); ?>" alt="" class="bigImg">
-			<?php else: ?>
-				<img src="/steel/Public/Uploads/<?php echo ($photodata[10]["photouri"]); ?>" alt="" class="bigImg"><?php endif; ?>
+	<div class="bigImgDiv w">
+		<img src="/steel/Public/Uploads/<?php echo ($photodata[15]["photouri"]); ?>" alt="" class="bigImg">	
 	</div>
 	<div class="fynews">
 		<div class="w">
@@ -235,7 +233,7 @@
 			<div class="dibu">页面版权所有：<?php echo ($info["company"]); ?> &nbsp;&nbsp;<?php echo ($info["beian"]); ?> &nbsp;&nbsp;网站建设：千宇软件</div>
 		</div>
 	</div>
-
+<?php echo ($info["tongji"]); ?>
 
 <div id="rightArrow"><a href="javascript:;" title="在线客户"></a></div>
 <div id="floatDivBoxs">
