@@ -32,7 +32,7 @@
                <td class="td-manage">
                 <a  href="{:U('Home/Content/disNews',array('id'=>$vo[id]))}" title="查看" class="btn btn-xs btn-success" target="_blank"><i class="fa fa-check  bigger-120" ></i></a>
                 <a title="编辑" href="{:U('Admin/Index/exitNews',array(id=>$vo[id]))}"  class="btn btn-xs btn-info" ><i class="fa fa-edit bigger-120"></i></a> 
-                <a title="删除" href="javascript:;"  onclick="member_del(this,'1')" class="btn btn-xs btn-warning" ><i class="fa fa-trash  bigger-120"></i></a>
+                <a title="删除" href="{:U('Admin/Index/delArticle',array(id=>$vo[id]))}"  onclick="member_del(this,$vo[id])" class="btn btn-xs btn-warning" ><i class="fa fa-trash  bigger-120"></i></a>
                </td>
               </tr>
           </foreach>

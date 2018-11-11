@@ -237,7 +237,16 @@ class IndexController extends CommonController {
 		$i = $article->exitArticle($data);
 		$this->ajaxReturn($i);
 	}
-
+	public function delArticle(){
+		$id = $_GET[id];
+		$file = new ArticleModel();
+		$i = $file->delArticle($id);
+		if ($i>0) {
+			$this->success("删除成功");
+		}else{
+			$this->error("删除失败");
+		}
+	}
 	//显示文件上传的页面
 	public function file(){
 		$this->display();
@@ -377,7 +386,7 @@ class IndexController extends CommonController {
 	    $upload = new \Think\Upload();// 实例化上传类
 	    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 	    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg', 'doc' ,'docx', 'xlsx');// 设置附件上传类型
-	    $upload->rootPath  =     './public/Uploads/'; // 设置附件上传根目录
+	    $upload->rootPath  =     './Public/Uploads/'; // 设置附件上传根目录
 	    $upload->savePath  =     ''; // 设置附件上传（子）目录
 	    // 上传文件  $oldFN
 	    $info   =   $upload->upload();

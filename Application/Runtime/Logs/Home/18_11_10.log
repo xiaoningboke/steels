@@ -458,3 +458,153 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002438s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002549s ]
 
+[ 2018-11-10T22:51:06+08:00 ] 127.0.0.1 /steel/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `information` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `information` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `information` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0069s ]
+NOTIC: [2] Missing argument 1 for Home\Model\ArticleModel::tuijian(), called in D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Controller\CommonController.class.php on line 22 and defined D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0079s ]
+NOTIC: [8] Undefined variable: classification D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 14 行.
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%%' AND `settop` = 1 ORDER BY id desc LIMIT 4   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `photo`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 1 ) LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 2 ) LIMIT 4   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 3 ) LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 4 ) LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 5 ) LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 6 ) LIMIT 4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Home\Model\ArticleModel::selnews(), called in D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Controller\IndexController.class.php on line 18 and defined D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 25 行.
+NOTIC: [8] Undefined variable: classification D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 27 行.
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%%' ORDER BY id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%6%' ORDER BY id desc LIMIT 10   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%7%' ORDER BY id desc LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2018-11-10T23:45:00+08:00 ] 127.0.0.1 /steel/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002381s ]
+SQL: SHOW COLUMNS FROM `information` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `information` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `information` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0087s ]
+NOTIC: [2] Missing argument 1 for Home\Model\ArticleModel::tuijian(), called in D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Controller\CommonController.class.php on line 22 and defined D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0107s ]
+NOTIC: [8] Undefined variable: classification D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 14 行.
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%%' AND `settop` = 1 ORDER BY id desc LIMIT 4   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `photo` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `photo`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `picture` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 1 ) LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 2 ) LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 3 ) LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 4 ) LIMIT 4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 5 ) LIMIT 4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `picture` WHERE ( fenlei = 6 ) LIMIT 4   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Home\Model\ArticleModel::selnews(), called in D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Controller\IndexController.class.php on line 18 and defined D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 25 行.
+NOTIC: [8] Undefined variable: classification D:\phpStudy\PHPTutorial\WWW\steel\Application\Home\Model\ArticleModel.class.php 第 27 行.
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%%' ORDER BY id desc LIMIT 10   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%6%' ORDER BY id desc LIMIT 10   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `article` WHERE `classification` LIKE '%7%' ORDER BY id desc LIMIT 10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 292 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 303 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\PHPTutorial\WWW\steel\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 314 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001970s ]
+

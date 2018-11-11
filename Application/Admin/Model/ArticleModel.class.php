@@ -37,4 +37,10 @@ class ArticleModel extends Model {
 		$data = $article->where("classification = 6 || classification = 7")->select();
 		return $data;
 	}
+
+	public function delArticle($id){
+		$article = M("Article");
+		$i = $article->where("id=$id")->delete(); 
+		return $i;
+	}
 }
