@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,14 +8,14 @@
 	<meta name="keywords" content="<?php echo ($info["keywords"]); ?>" />
 	<meta name="generator" content="千宇软件" />
 	<meta name="template" content="Zero" />
-	<link rel="stylesheet" href="/steel/Public/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/steel/Public/bootstrap/css/bootstrap-theme.css">
-	<link rel="stylesheet" href="/steel/Public/css/header.css">
-	<link rel="stylesheet" href="/steel/Public/css/about.css">
-	<link rel="stylesheet" href="/steel/Public/css/kefu.css">
-	<script src="/steel/Public/jquery/jquery.js"></script>
-	<script src="/steel/Public/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/steel/Public/js/swsy.js"></script>
+	<link rel="stylesheet" href="/Public/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/Public/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="/Public/css/header.css">
+	<link rel="stylesheet" href="/Public/css/about.css">
+	<link rel="stylesheet" href="/Public/css/kefu.css">
+	<script src="/Public/jquery/jquery.js"></script>
+	<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/Public/js/swsy.js"></script>
 	<script>
 		$(function () {
 	    $(".dropdown").mouseover(function () {
@@ -52,7 +52,7 @@
 			</div>
 			<!--logo-->
 			<div class="logo w">
-				<img src="/steel/Public/Uploads/<?php echo ($photodata[0]["photouri"]); ?>" alt="">
+				<img src="/Public/Uploads/<?php echo ($photodata[0]["photouri"]); ?>" alt="">
 			</div>
 			<div class="nav w">
 				<nav class="navbar navbar-default  ww">
@@ -125,7 +125,7 @@
 				</nav>
 			</div>
 		</div>
-<link rel="stylesheet" href="/steel/Public/css/index.css">
+<link rel="stylesheet" href="/Public/css/index.css">
 		<div class="main w">
 			<!--轮播图-->
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -139,19 +139,19 @@
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
-			      <img class="center-block" src="/steel/Public/Uploads/<?php echo ($photodata[1]["photouri"]); ?>" alt="...">
+			      <img class="center-block" src="/Public/Uploads/<?php echo ($photodata[1]["photouri"]); ?>" alt="...">
 			      <div class="carousel-caption">
 			        one
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img class="center-block" src="/steel/Public/Uploads/<?php echo ($photodata[2]["photouri"]); ?>" alt="...">
+			      <img class="center-block" src="/Public/Uploads/<?php echo ($photodata[2]["photouri"]); ?>" alt="...">
 			      <div class="carousel-caption">
 			        two
 			      </div>
 			    </div>
 			    <div class="item">
-			      <img class="center-block" src="/steel/Public/Uploads/<?php echo ($photodata[3]["photouri"]); ?>" alt="...">
+			      <img class="center-block" src="/Public/Uploads/<?php echo ($photodata[3]["photouri"]); ?>" alt="...">
 			      <div class="carousel-caption">
 			        three
 			      </div>
@@ -176,7 +176,7 @@
 						<p class="gd"><a href="<?php echo U('Home/Content/index',array('classification'=>1));?>">更多>></a></p>
 					</div>
 					<div class="gsjjCon">
-						<img src="/steel/Public/Uploads/<?php echo ($photodata[4]["photouri"]); ?>" class="gsjjIcon">
+						<img src="/Public/Uploads/<?php echo ($photodata[4]["photouri"]); ?>" class="gsjjIcon">
 						<div class="gsjjConText">
 							<?php echo ($info["jianjie"]); ?>
 						</div>
@@ -196,7 +196,7 @@
 						<p><span>地址：</span><?php echo ($info["address"]); ?></p>
 						<p><span>销售：</span><?php echo ($info["protact"]); ?></p>
 						<p><span>扫码关注我们</span></p>
-						<img src="/steel/Public/Uploads/<?php echo ($photodata[5]["photouri"]); ?>" alt="">
+						<img src="/Public/Uploads/<?php echo ($photodata[5]["photouri"]); ?>" alt="">
 					</div>
 				</div>	
 			</div>
@@ -215,28 +215,85 @@
 				</div>
 				<div class="product">
 				    <div class="mains selected">
-				    	<?php if(is_array($wufeng)): foreach($wufeng as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
+				    	
+				    		<a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
 						    		<div class="chzsicon">
-						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[16]["photouri"]); ?>" alt="">
+						    		<p><?php echo ($photodata[16]["title"]); ?></p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[17]["photouri"]); ?>" alt="">
 						    		<p>无缝钢管</p>
 						    	</div>
-						    </a><?php endforeach; endif; ?>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[18]["photouri"]); ?>" alt="">
+						    		<p>无缝钢管</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[19]["photouri"]); ?>" alt="">
+						    		<p>无缝钢管</p>
+						    	</div>
+						    </a>
+				    	
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($jingmi)): foreach($jingmi as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
+				    		<a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
 						    		<div class="chzsicon">
-						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[20]["photouri"]); ?>" alt="">
 						    		<p>精密钢管</p>
 						    	</div>
-						    </a><?php endforeach; endif; ?>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[21]["photouri"]); ?>" alt="">
+						    		<p>精密钢管</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[22]["photouri"]); ?>" alt="">
+						    		<p>精密钢管</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[23]["photouri"]); ?>" alt="">
+						    		<p>精密钢管</p>
+						    	</div>
+						    </a>
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($hejin)): foreach($hejin as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
+				    		<a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
 						    		<div class="chzsicon">
-						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[24]["photouri"]); ?>" alt="">
 						    		<p>合金钢管</p>
 						    	</div>
-						    </a><?php endforeach; endif; ?>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[25]["photouri"]); ?>" alt="">
+						    		<p>合金钢管</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[26]["photouri"]); ?>" alt="">
+						    		<p>合金钢管</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[27]["photouri"]); ?>" alt="">
+						    		<p>合金钢管</p>
+						    	</div>
+						    </a>
+
 				    </div>
 				 </div>
 			</div>
@@ -255,28 +312,83 @@
 				</div>
 				<div class="products">
 				    <div class="mains selected">
-				    	<?php if(is_array($juchuang)): foreach($juchuang as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">
+				    		<a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">
 						    		<div class="chzsicon">
-						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[29]["photouri"]); ?>" alt="">
 						    		<p>锯床切割</p>
 						    	</div>
-						    </a><?php endforeach; endif; ?>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[30]["photouri"]); ?>" alt="">
+						    		<p>锯床切割</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[31]["photouri"]); ?>" alt="">
+						    		<p>锯床切割</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[32]["photouri"]); ?>" alt="">
+						    		<p>锯床切割</p>
+						    	</div>
+						    </a>
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($zidong)): foreach($zidong as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">
+				    		<a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">
 						    		<div class="chzsicon">
-						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[33]["photouri"]); ?>" alt="">
 						    		<p>自动切割</p>
 						    	</div>
-						    </a><?php endforeach; endif; ?>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[34]["photouri"]); ?>" alt="">
+						    		<p>自动切割</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[35]["photouri"]); ?>" alt="">
+						    		<p>自动切割</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[36]["photouri"]); ?>" alt="">
+						    		<p>自动切割</p>
+						    	</div>
+						    </a>
+
 				    </div>
 				     <div class="mains">
-				    	<?php if(is_array($daojiao)): foreach($daojiao as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">
+				    		<a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">
 						    		<div class="chzsicon">
-						        	<img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[37]["photouri"]); ?>" alt="">
 						    		<p>钢管倒角</p>
 						    	</div>
-						    </a><?php endforeach; endif; ?>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[38]["photouri"]); ?>" alt="">
+						    		<p>钢管倒角</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[39]["photouri"]); ?>" alt="">
+						    		<p>钢管倒角</p>
+						    	</div>
+						    </a>
+						    <a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">
+						    		<div class="chzsicon">
+						        	<img src="/Public/Uploads/<?php echo ($photodata[40]["photouri"]); ?>" alt="">
+						    		<p>钢管倒角</p>
+						    	</div>
+						    </a>
 				    </div>
 				 </div>
 			</div>
@@ -361,7 +473,7 @@
 				</ul>
 				<div class="gsjjright" style="margin:15px;padding-left: 80px;">
 					<div class="lxwmCons">
-						<img src="/steel/Public/Uploads/<?php echo ($photodata[6]["photouri"]); ?>" alt="">
+						<img src="/Public/Uploads/<?php echo ($photodata[6]["photouri"]); ?>" alt="">
 					</div>
 				</div>	
 
@@ -376,26 +488,26 @@
   <div class="floatDtt">在线客服</div>
   <div class="floatShadow">
     <ul class="floatDqq">
-      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["qq"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/steel/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服1号</a></li>
-      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["kefu"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/steel/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服2号</a></li>
+      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["qq"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服1号</a></li>
+      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["kefu"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服2号</a></li>
     </ul>
     <div class="floatDtxt">热线电话</div>
     <div class="floatDtel">
 		<?php echo ($info["phone"]); ?>
 		<?php echo ($info["tell"]); ?>
     </div>
-    <div style="text-align:center;padding:10px;background:#EBEBEB;"><img src="/steel/Public/Uploads/<?php echo ($photodata[5]["photouri"]); ?>" width="100%" alt=""><br>
+    <div style="text-align:center;padding:10px;background:#EBEBEB;"><img src="/Public/Uploads/<?php echo ($photodata[5]["photouri"]); ?>" width="100%" alt=""><br>
       微信公众账号</div>
   </div>
   <div class="floatDbg"></div>
 </div>
-	<script src="/steel/Public/js/rightArrow.js"></script>
+	<script src="/Public/js/rightArrow.js"></script>
 
 
 
 
 
-               <button data-method="offset" data-type="auto" id="leftbox" class="leftbox" data-type="auto" onclick="OpenDiv()"><img src="/steel/Public/img/r-number.png" />
+               <button data-method="offset" data-type="auto" id="leftbox" class="leftbox" data-type="auto" onclick="OpenDiv()"><img src="/Public/img/r-number.png" />
                 <p>重量计算器</p>
                 </button>
 
