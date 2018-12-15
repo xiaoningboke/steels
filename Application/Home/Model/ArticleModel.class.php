@@ -24,8 +24,7 @@ class ArticleModel extends Model {
 	//
 	public function selnews($classification){
 		$article = M("Article");
-		$map['classification'] =array('like','%'.$classification.'%');
-		$data = $article->where($map)->order('id desc')->limit(10)->select();
+		$data = $article->where("classification=$classification")->order('id desc')->limit(10)->select();
 		return $data;
 	}
 	//搜索

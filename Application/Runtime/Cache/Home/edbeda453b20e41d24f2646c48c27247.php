@@ -8,14 +8,14 @@
 	<meta name="keywords" content="<?php echo ($info["keywords"]); ?>" />
 	<meta name="generator" content="千宇软件" />
 	<meta name="template" content="Zero" />
-	<link rel="stylesheet" href="/steel/Public/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/steel/Public/bootstrap/css/bootstrap-theme.css">
-	<link rel="stylesheet" href="/steel/Public/css/header.css">
-	<link rel="stylesheet" href="/steel/Public/css/about.css">
-	<link rel="stylesheet" href="/steel/Public/css/kefu.css">
-	<script src="/steel/Public/jquery/jquery.js"></script>
-	<script src="/steel/Public/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/steel/Public/js/swsy.js"></script>
+	<link rel="stylesheet" href="/Public/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/Public/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="/Public/css/header.css">
+	<link rel="stylesheet" href="/Public/css/about.css">
+	<link rel="stylesheet" href="/Public/css/kefu.css">
+	<script src="/Public/jquery/jquery.js"></script>
+	<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/Public/js/swsy.js"></script>
 	<script>
 		$(function () {
 	    $(".dropdown").mouseover(function () {
@@ -52,7 +52,7 @@
 			</div>
 			<!--logo-->
 			<div class="logo w">
-				<img src="/steel/Public/Uploads/<?php echo ($photodata[0]["photouri"]); ?>" alt="">
+				<img src="/Public/Uploads/<?php echo ($photodata[0]["photouri"]); ?>" alt="">
 			</div>
 			<div class="nav w">
 				<nav class="navbar navbar-default  ww">
@@ -69,7 +69,7 @@
 				          </ul>
 				        </li>
 				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品服务 <span class="caret"></span></a>
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心 <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">无缝钢管</a></li>
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">精密钢管</a></li>
@@ -79,6 +79,7 @@
 				        <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
+				          	<li><a href="<?php echo U('Home/Content/newsList',array('classification'=>17));?>">热点资讯</a></li>
 				            <li><a href="<?php echo U('Home/Content/newsList',array('classification'=>6));?>">钢管知识</a></li>
 				            <li><a href="<?php echo U('Home/Content/newsList',array('classification'=>7));?>">行业动态</a></li>
 				            
@@ -89,7 +90,7 @@
 				          <ul class="dropdown-menu">
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">自动切割</a></li>
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">锯床切割</a></li>
-				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">钢管倒角</a></li>
+				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">无缝方管</a></li>
 				          </ul>
 				        </li>
 				        <li class="dropdown">
@@ -125,14 +126,14 @@
 				</nav>
 			</div>
 		</div>
-<link rel="stylesheet" href="/steel/Public/css/news.css">
+<link rel="stylesheet" href="/Public/css/news.css">
 <div class="main">
 	<div class="bigImgDiv w">
-		<img src="/steel/Public/Uploads/<?php echo ($photodata[15]["photouri"]); ?>" alt="" class="bigImg">	
+		<img src="/Public/Uploads/<?php echo ($photodata[14]["photouri"]); ?>" alt="" class="bigImg">	
 	</div>
 	<div class="fynews">
 		<div class="w">
-			<img src="/steel/Public/img/fynews.jpg" alt="">
+			<img src="/Public/img/fynews.jpg" alt="">
 			<ul class="fynewsnr">
 				<?php if(is_array($tuijiannews)): foreach($tuijiannews as $key=>$vo): ?><li><a href="<?php echo U('Home/Content/disNews',array('id'=>$vo[id]));?>"><?php echo ($vo["title"]); ?></a></li><?php endforeach; endif; ?>
 			</ul>
@@ -151,12 +152,12 @@
 				<ul class="leftfenlei">
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">自动切割</a></li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">锯床切割</a></li>
-					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">钢管倒角</a></li>
+					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">无缝方管</a></li>
 				</ul>
 			</div>
 			<div class="leftBottom">
 				<div class="leftTopTitle">联系方式</div>
-				<img src="/steel/Public/Uploads/<?php echo ($photodata[8]["photouri"]); ?>" alt="">
+				<img src="/Public/Uploads/<?php echo ($photodata[7]["photouri"]); ?>" alt="">
 				<h4><?php echo ($info["company"]); ?></h4>
 				<p><span>联系人：</span><?php echo ($info["people"]); ?></p>
 				<p><span>QQ：</span><?php echo ($info["qq"]); ?></p>
@@ -199,6 +200,7 @@
 				</ul>
 				<ul>
 					<li class="navbars">新闻中心</li>
+          <li><a href="<?php echo U('Home/Content/newsList',array('classification'=>17));?>">热点资讯</a></li>
 					<li><a href="<?php echo U('Home/Content/newsList',array('classification'=>6));?>">钢管知识</a></li>
 					<li><a href="<?php echo U('Home/Content/newsList',array('classification'=>7));?>">行业动态</a></li>
 				</ul>
@@ -206,7 +208,7 @@
 					<li class="navbars">钢管加工</li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">自动切割</a></li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">锯床切割</a></li>
-					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">钢管倒角</a></li>
+					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">无缝方管</a></li>
 				</ul>
 				<ul>
 					<li class="navbars">行业应用</li>
@@ -225,7 +227,7 @@
 				</ul>
 				<div class="gsjjright" style="margin:15px;padding-left: 80px;">
 					<div class="lxwmCons">
-						<img src="/steel/Public/Uploads/<?php echo ($photodata[6]["photouri"]); ?>" alt="">
+						<img src="/Public/Uploads/<?php echo ($photodata[6]["photouri"]); ?>" alt="">
 					</div>
 				</div>	
 
@@ -240,26 +242,26 @@
   <div class="floatDtt">在线客服</div>
   <div class="floatShadow">
     <ul class="floatDqq">
-      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["qq"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/steel/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服1号</a></li>
-      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["kefu"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/steel/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服2号</a></li>
+      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["qq"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服1号</a></li>
+      <li style="padding-left:0px;"><a target="_blank" href="tencent://message/?uin=<?php echo ($info["kefu"]); ?>&Site=sc.chinaz.com&Menu=yes"><img src="/Public/img/qq.png" align="absmiddle">&nbsp;&nbsp;在线客服2号</a></li>
     </ul>
     <div class="floatDtxt">热线电话</div>
     <div class="floatDtel">
 		<?php echo ($info["phone"]); ?>
 		<?php echo ($info["tell"]); ?>
     </div>
-    <div style="text-align:center;padding:10px;background:#EBEBEB;"><img src="/steel/Public/Uploads/<?php echo ($photodata[5]["photouri"]); ?>" width="100%" alt=""><br>
+    <div style="text-align:center;padding:10px;background:#EBEBEB;"><img src="/Public/Uploads/<?php echo ($photodata[5]["photouri"]); ?>" width="100%" alt=""><br>
       微信公众账号</div>
   </div>
   <div class="floatDbg"></div>
 </div>
-	<script src="/steel/Public/js/rightArrow.js"></script>
+	<script src="/Public/js/rightArrow.js"></script>
 
 
 
 
 
-               <button data-method="offset" data-type="auto" id="leftbox" class="leftbox" data-type="auto" onclick="OpenDiv()"><img src="/steel/Public/img/r-number.png" />
+               <button data-method="offset" data-type="auto" id="leftbox" class="leftbox" data-type="auto" onclick="OpenDiv()"><img src="/Public/img/r-number.png" />
                 <p>重量计算器</p>
                 </button>
 

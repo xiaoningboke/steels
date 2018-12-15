@@ -5,12 +5,12 @@
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-		<link href="/steel/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/steel/Public/css/style.css"/>       
-        <link href="/steel/Public/assets/css/codemirror.css" rel="stylesheet">
-        <link rel="stylesheet" href="/steel/Public/assets/css/ace.min.css" />
-        <link rel="stylesheet" href="/steel/Public/assets/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/steel/Public/font/css/font-awesome.min.css" />
+		<link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/Public/css/style.css"/>       
+        <link href="/Public/assets/css/codemirror.css" rel="stylesheet">
+        <link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
+        <link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/Public/font/css/font-awesome.min.css" />
         
         	<!--[if IE 7]>
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
@@ -18,14 +18,14 @@
         <!--[if lte IE 8]>
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
 		<![endif]-->
-		<script src="/steel/Public/js/jquery-1.9.1.min.js"></script>
-        <script src="/steel/Public/assets/js/bootstrap.min.js"></script>
-		<script src="/steel/Public/assets/js/typeahead-bs2.min.js"></script>           	
-        <script src="/steel/Public/assets/layer/layer.js" type="text/javascript" ></script>          
-        <script src="/steel/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="/steel/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
-        <script src="/steel/Public/assets/js/ace-elements.min.js"></script>
-		<script src="/steel/Public/assets/js/ace.min.js"></script>
+		<script src="/Public/js/jquery-1.9.1.min.js"></script>
+        <script src="/Public/assets/js/bootstrap.min.js"></script>
+		<script src="/Public/assets/js/typeahead-bs2.min.js"></script>           	
+        <script src="/Public/assets/layer/layer.js" type="text/javascript" ></script>          
+        <script src="/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
+        <script src="/Public/assets/js/ace-elements.min.js"></script>
+		<script src="/Public/assets/js/ace.min.js"></script>
 <title>系统设置</title>
 
 </head>
@@ -61,7 +61,7 @@
           </div>
            <input type="submit" class="btn btn-default radius" value="替换" />
           </form>
-          <img src="/steel/Public/Uploads/<?php echo ($data[0][photouri]); ?>" alt="" width="700px">
+          <img src="/Public/Uploads/<?php echo ($data[0][photouri]); ?>" alt="" width="700px">
         </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
     <?php if(is_array($picdata)): foreach($picdata as $k=>$vo): ?><tr>
             <td><?php echo ($k+1); ?></td>
             <td> 
-              <img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="" width="200px;">
+              <img src="/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="" width="200px;">
             </td>
             <td class="td-manage">
             <a title="删除" href="<?php echo U('Admin/Index/delpicture',array('id'=>$vo[id]));?>"  class="btn btn-xs btn-warning" ><i class="icon-trash  bigger-120"></i></a>
@@ -116,9 +116,9 @@
 </div>
 </body>
 </html>
-<script type="text/javascript" src="/steel/Public/Widget/ueditor/1.4.3/ueditor.config.js"></script>
-<script type="text/javascript" src="/steel/Public/Widget/ueditor/1.4.3/ueditor.all.min.js"> </script>
-<script type="text/javascript" src="/steel/Public/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script> 
+<script type="text/javascript" src="/Public/Widget/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="/Public/Widget/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="/Public/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script> 
 
 
 
@@ -214,7 +214,7 @@ laydate(start);
 laydate(end);
 </script>
 <script type="text/javascript" charset="utf-8">  
-   window.UEDITOR_HOME_URL = "/steel/Public/Ueditor/";  
+   window.UEDITOR_HOME_URL = "/Public/Ueditor/";  
     $(document).ready(function () {  
       UE.getEditor('info', {  
       initialFrameHeight: 500,  

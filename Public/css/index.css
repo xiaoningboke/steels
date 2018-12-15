@@ -1,4 +1,4 @@
-.gsjj{
+﻿.gsjj{
 
 }
 .gsjjleft{
@@ -28,7 +28,7 @@
 	
 }
 .gsjjConText{
-	height: 450px;
+	/* height: 450px; */
 	text-overflow:ellipsis;
 }
 .gd{
@@ -38,8 +38,9 @@
 }
 
 
-.lxwmCon{
-
+.lxwmCon img{
+	padding-top: 10px;
+	width: 470px;
 }
 .lxwmCon p{
 	font-size: 20;
@@ -47,9 +48,7 @@
 .lxwmCon span{
 	font-weight: 700;
 }
-.lxwmCon img{
-	width: 258px;
-}
+
 
 /* 产品中心 */
 .cpzx{
@@ -57,7 +56,7 @@
 }
 .cpzxLeft{
 	float: left;
-	width: 300;
+	width: 200;
 }
 .tab,.tabs{
 	 list-style: none;

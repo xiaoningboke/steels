@@ -69,7 +69,7 @@
 				          </ul>
 				        </li>
 				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品服务 <span class="caret"></span></a>
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心 <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">无缝钢管</a></li>
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">精密钢管</a></li>
@@ -79,6 +79,7 @@
 				        <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
+				          	<li><a href="<?php echo U('Home/Content/newsList',array('classification'=>17));?>">热点资讯</a></li>
 				            <li><a href="<?php echo U('Home/Content/newsList',array('classification'=>6));?>">钢管知识</a></li>
 				            <li><a href="<?php echo U('Home/Content/newsList',array('classification'=>7));?>">行业动态</a></li>
 				            
@@ -89,7 +90,7 @@
 				          <ul class="dropdown-menu">
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">自动切割</a></li>
 				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">锯床切割</a></li>
-				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">钢管倒角</a></li>
+				            <li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">无缝方管</a></li>
 				          </ul>
 				        </li>
 				        <li class="dropdown">
@@ -129,7 +130,7 @@
 
 <div class="main">
 	<div class="bigImgDiv w">
-		<img src="/steel/Public/Uploads/<?php echo ($photodata[16]["photouri"]); ?>" alt="" class="bigImg">
+		<img src="/steel/Public/Uploads/<?php echo ($photodata[40]["photouri"]); ?>" alt="" class="bigImg">
 	</div>
 	<div class="fynews">
 		<div class="w">
@@ -142,7 +143,7 @@
 	<div class="w con">
 		<div class="Conleft">
 			<div class="leftTop">
-				<div class="leftTopTitle">关于我们</div>
+				<div class="leftTopTitle">产品中心</div>
 				<ul class="leftfenlei">
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">无缝钢管</a></li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">精密钢管</a></li>
@@ -152,12 +153,12 @@
 				<ul class="leftfenlei">
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">自动切割</a></li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">锯床切割</a></li>
-					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">钢管倒角</a></li>
+					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">无缝方管</a></li>
 				</ul>
 			</div>
 			<div class="leftBottom">
 				<div class="leftTopTitle">联系方式</div>
-				<img src="/steel/Public/Uploads/<?php echo ($photodata[8]["photouri"]); ?>" alt="">
+				<img src="/steel/Public/Uploads/<?php echo ($photodata[7]["photouri"]); ?>" alt="">
 				<h4><?php echo ($info["company"]); ?></h4>
 				<p><span>联系人：</span><?php echo ($info["people"]); ?></p>
 				<p><span>QQ：</span><?php echo ($info["qq"]); ?></p>
@@ -197,6 +198,7 @@
 				</ul>
 				<ul>
 					<li class="navbars">新闻中心</li>
+          <li><a href="<?php echo U('Home/Content/newsList',array('classification'=>17));?>">热点资讯</a></li>
 					<li><a href="<?php echo U('Home/Content/newsList',array('classification'=>6));?>">钢管知识</a></li>
 					<li><a href="<?php echo U('Home/Content/newsList',array('classification'=>7));?>">行业动态</a></li>
 				</ul>
@@ -204,7 +206,7 @@
 					<li class="navbars">钢管加工</li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>8,'fenlei'=>4));?>">自动切割</a></li>
 					<li><a href="<?php echo U('Home/Content/product',array('classification'=>9,'fenlei'=>5));?>">锯床切割</a></li>
-					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">钢管倒角</a></li>
+					<li><a href="<?php echo U('Home/Content/product',array('classification'=>10,'fenlei'=>6));?>">无缝方管</a></li>
 				</ul>
 				<ul>
 					<li class="navbars">行业应用</li>

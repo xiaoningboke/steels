@@ -23,9 +23,15 @@
           <if condition="$data.classification eq 6 ">
             <option value="6" selected="selected">钢管知识</option>
             <option value="7">行业动态</option>
-          <else />
+            <option value="17">热点资讯</option>
+          <elseif condition="$data.classification eq 7 " />
             <option value="6">钢管知识</option>
             <option value="7" selected="selected">行业动态</option>
+            <option value="17">热点资讯</option>
+            <else/>
+            <option value="6">钢管知识</option>
+            <option value="7">行业动态</option>
+            <option value="17"  selected="selected">热点资讯</option>
           </if>
        </select>
        </span>

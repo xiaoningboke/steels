@@ -9,15 +9,15 @@
 	<meta name="generator" content="千宇软件" />
 	<meta name="template" content="Zero" />
 	<!--必要样式-->
-	<link type="text/css" href="/steel/Public/m/css/style.css" rel="stylesheet">
-	<link href="/steel/Public/m/css/component.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="/steel/Public/m/css/header.css">
-	<link rel="stylesheet" type="text/css" href="/steel/Public/m/css/lunbo.css">
-	<link rel="stylesheet" type="text/css" href="/steel/Public/m/dist/swipeslider.css">
-	<link rel="stylesheet" href="/steel/Public/m/css/index.css">
-	<script type="text/javascript" src="/steel/Public/m/js/jquery.js"></script>
-	<script type="text/javascript" src="/steel/Public/m/js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="/steel/Public/m/js/jquery.dlmenu.js"></script>
+	<link type="text/css" href="/Public/m/css/style.css" rel="stylesheet">
+	<link href="/Public/m/css/component.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/Public/m/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/Public/m/css/lunbo.css">
+	<link rel="stylesheet" type="text/css" href="/Public/m/dist/swipeslider.css">
+	<link rel="stylesheet" href="/Public/m/css/index.css">
+	<script type="text/javascript" src="/Public/m/js/jquery.js"></script>
+	<script type="text/javascript" src="/Public/m/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="/Public/m/js/jquery.dlmenu.js"></script>
 </head>
 <body>
 <header class="header">
@@ -92,13 +92,13 @@
 		<figure id="full_feature" class="swipslider">
 		    <ul class="sw-slides">
 		        <li class="sw-slide">
-		            <img src="/steel/Public/Uploads/<?php echo ($photodata[1]["photouri"]); ?>" alt="Summer beach concept">
+		            <img src="/Public/Uploads/<?php echo ($photodata[1]["photouri"]); ?>" alt="Summer beach concept">
 		        </li>
 		        <li class="sw-slide">
-		            <img src="/steel/Public/Uploads/<?php echo ($photodata[2]["photouri"]); ?>" alt="Lang from Yie Ar Kung Fu">
+		            <img src="/Public/Uploads/<?php echo ($photodata[2]["photouri"]); ?>" alt="Lang from Yie Ar Kung Fu">
 		        </li>       
 		        <li class="sw-slide">
-		            <img src="/steel/Public/Uploads/<?php echo ($photodata[3]["photouri"]); ?>" alt="Tiny Tina">
+		            <img src="/Public/Uploads/<?php echo ($photodata[3]["photouri"]); ?>" alt="Tiny Tina">
 		        </li>
 		    </ul>
 		</figure>   
@@ -108,25 +108,25 @@
 <div class="xdh">
 	<div class="xdhIcon">
 		<a href="<?php echo U('Home/Content/index',array('classification'=>1));?>">
-			<img src="/steel/Public/img/icon_gywm.png" alt="">
+			<img src="/Public/img/icon_gywm.png" alt="">
 			<p>公司简介</p>
 		</a>
 	</div>
 	<div class="xdhIcon">
 		<a href="<?php echo U('Home/Content/lianxi');?>">
-			<img src="/steel/Public/img/icon_lxwm.png" alt="">
+			<img src="/Public/img/icon_lxwm.png" alt="">
 			<p>联系我们</p>
 		</a>
 	</div>
 	<div class="xdhIcon">
 		<a href="<?php echo U('Home/Content/jisuanqi');?>">
-			<img src="/steel/Public/img/icon_jsq.png" alt="">
+			<img src="/Public/img/icon_jsq.png" alt="">
 			<p>重量计算器</p>
 		</a>
 	</div>
 	<div class="xdhIcon">
 		<a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
-			<img src="/steel/Public/img/icon_cpzs.png" alt="">
+			<img src="/Public/img/icon_cpzs.png" alt="">
 			<p>产品展示</p>
 		</a>
 	</div>
@@ -146,19 +146,19 @@
 		<ul>
 			<li>
 				<?php if(is_array($wufeng)): foreach($wufeng as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>3,'fenlei'=>1));?>">
-					    <img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+					    <img src="/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
 					    <p>无缝钢管</p>
 					</a><?php endforeach; endif; ?>
 			</li>
 			<li>
 				<?php if(is_array($jingmi)): foreach($jingmi as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>4,'fenlei'=>2));?>">
-				    <img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+				    <img src="/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
 				    <p>精密钢管</p>
 				</a><?php endforeach; endif; ?>
 			</li>
 			<li>
 				<?php if(is_array($hejin)): foreach($hejin as $key=>$vo): ?><a href="<?php echo U('Home/Content/product',array('classification'=>5,'fenlei'=>3));?>">
-				    <img src="/steel/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
+				    <img src="/Public/Uploads/<?php echo ($vo["picname"]); ?>" alt="">
 				    <p>合金钢管</p>
 				</a><?php endforeach; endif; ?>
 			</li>
@@ -180,25 +180,25 @@
 <div class="footer">
 	<div class="footerCon">
 		<a href="<?php echo U('Home/Index/index');?>">
-			<img src="/steel/Public/img/icon_sy.png" alt="">
+			<img src="/Public/img/icon_sy.png" alt="">
 			<p>首页</p>
 		</a>
 	</div>
 	<div class="footerCon">
 		<a href="tel:{{<?php echo ($info["phone"]); ?>}}">
-			<img src="/steel/Public/img/icon_dh.png" alt="">
+			<img src="/Public/img/icon_dh.png" alt="">
 			<p>拨打电话</p>
 		</a>
 	</div>
 	<div class="footerCon">
 		<a href="<?php echo U('Home/Content/ditu');?>">
-			<img src="/steel/Public/img/icon_wz.png" alt="">
+			<img src="/Public/img/icon_wz.png" alt="">
 			<p>在线地图</p>
 		</a>
 	</div>
 	<div class="footerCon">
 		<a href="<?php echo U('Home/Content/zixun');?>">
-			<img src="/steel/Public/img/icon_ly.png" alt="">
+			<img src="/Public/img/icon_ly.png" alt="">
 			<p>在线留言</p>
 		</a>
 	</div>
@@ -238,7 +238,7 @@ $(function(){
 				}
 			}
 		</script>
-	<script type="text/javascript" src="/steel/Public/m/dist/swipeslider.min.js"></script>
+	<script type="text/javascript" src="/Public/m/dist/swipeslider.min.js"></script>
 	<script type="text/javascript">
 		$(window).load(function() {
 		      $('#full_feature').swipeslider();

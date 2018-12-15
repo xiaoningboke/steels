@@ -34,8 +34,10 @@ class ContentController extends CommonController {
         $classification = $_GET[classification];
         if($classification == 6){
             $this->assign('title','钢管知识');
-        }elseif ($classification == 7) {
+        }else if ($classification == 7) {
             $this->assign('title','行业动态');
+        }else{
+            $this->assign('title','热点资讯');
         }
         $article = new ArticleModel();
         $tuijian = $article->tuijian($classification);

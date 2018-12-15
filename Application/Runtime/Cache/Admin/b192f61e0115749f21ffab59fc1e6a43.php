@@ -53,6 +53,7 @@
           <option value="">--选择所属分类--</option>
           <option value="6">钢管知识</option>
           <option value="7">行业动态</option>
+          <option value="17">热点资讯</option>
        </select>
        </span>
       </li>

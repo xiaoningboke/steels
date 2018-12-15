@@ -4,26 +4,26 @@
 	<meta charset="utf-8" />
 	<title>网站后台管理系统  </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="/Public/assets/css/font-awesome.min.css" />
+	<link href="/steel/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/steel/Public/assets/css/font-awesome.min.css" />
 	<!--[if IE 7]>
 	<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
 	<![endif]-->
-	<link rel="stylesheet" href="/Public/assets/css/ace.min.css" />
-	<link rel="stylesheet" href="/Public/assets/css/ace-rtl.min.css" />
-	<link rel="stylesheet" href="/Public/assets/css/ace-skins.min.css" />
-	<link rel="stylesheet" href="/Public/css/style.css" />
+	<link rel="stylesheet" href="/steel/Public/assets/css/ace.min.css" />
+	<link rel="stylesheet" href="/steel/Public/assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="/steel/Public/assets/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="/steel/Public/css/style.css" />
 	<!--[if lte IE 8]>
 	<link rel="stylesheet" href="assets/css/ace-ie.min.css" />
 
 	<![endif]-->
-	<script src="/Public/assets/js/ace-extra.min.js"></script>
+	<script src="/steel/Public/assets/js/ace-extra.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
 	<!--[if !IE]> -->
-	<script src="/Public/js/jquery-1.9.1.min.js"></script>
+	<script src="/steel/Public/js/jquery-1.9.1.min.js"></script>
 	<!-- <![endif]-->
 	<!--[if IE]>
 	<script type="text/javascript">window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");</script>
@@ -31,16 +31,16 @@
 	<script type="text/javascript">
         if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 	</script>
-	<script src="/Public/assets/js/bootstrap.min.js"></script>
-	<script src="/Public/assets/js/typeahead-bs2.min.js"></script>
+	<script src="/steel/Public/assets/js/bootstrap.min.js"></script>
+	<script src="/steel/Public/assets/js/typeahead-bs2.min.js"></script>
 	<!--[if lte IE 8]>
 	<script src="assets/js/excanvas.min.js"></script>
 	<![endif]-->
-	<script src="/Public/assets/js/ace-elements.min.js"></script>
-	<script src="/Public/assets/js/ace.min.js"></script>
-	<script src="/Public/assets/layer/layer.js" type="text/javascript"></script>
-	<script src="/Public/assets/laydate/laydate.js" type="text/javascript"></script>
-	<script src="/Public/js/jquery.nicescroll.js" type="text/javascript"></script>
+	<script src="/steel/Public/assets/js/ace-elements.min.js"></script>
+	<script src="/steel/Public/assets/js/ace.min.js"></script>
+	<script src="/steel/Public/assets/layer/layer.js" type="text/javascript"></script>
+	<script src="/steel/Public/assets/laydate/laydate.js" type="text/javascript"></script>
+	<script src="/steel/Public/js/jquery.nicescroll.js" type="text/javascript"></script>
 	<script type="text/javascript">
         $(function(){
             var cid = $('#nav_list> li>.submenu');
@@ -210,7 +210,7 @@
 			<!--<img src="images/logo.png" width="470px">-->
 			<!--</small>-->
 			<!--</a>&lt;!&ndash; /.brand &ndash;&gt;-->
-			<img src="/Public/images/潍坊科技学院校徽.png" height="75" width="500" />
+			<img src="/steel/Public/images/潍坊科技学院校徽.png" height="75" width="500" />
 		</div>
 		<!-- /.navbar-header -->
 		<div class="navbar-header operating pull-left">
@@ -276,7 +276,7 @@
 						<ul class="submenu">
 							<li class="home"><a href="javascript:void(0)" name="<?php echo U('Admin/Index/zidong');?>" title="自动切割" class="iframeurl"><i class="icon-double-angle-right"></i>自动切割</a></li>
 							<li class="home"><a href="javascript:void(0)" name="<?php echo U('Admin/Index/juchuang');?>" title="锯床切割" class="iframeurl"><i class="icon-double-angle-right"></i>锯床切割</a></li>
-							<li class="home"><a href="javascript:void(0)" name="<?php echo U('Admin/Index/daojiao');?>" title="钢管倒角" class="iframeurl"><i class="icon-double-angle-right"></i>钢管倒角</a></li>
+							<li class="home"><a href="javascript:void(0)" name="<?php echo U('Admin/Index/daojiao');?>" title="无缝方管" class="iframeurl"><i class="icon-double-angle-right"></i>钢管倒角</a></li>
 						</ul> </li>
 					<li> <a href="#" class="dropdown-toggle"><i class="icon-list"></i><span class="menu-text"> 行业领域 </span><b class="arrow icon-angle-down"></b></a>
 						<ul class="submenu">

@@ -34,7 +34,7 @@ class ArticleModel extends Model {
 	//查询新闻
 	public function selnews(){
 		$article = M("Article");
-		$data = $article->where("classification = 6 || classification = 7")->select();
+		$data = $article->where("classification = 6 || classification = 7 || classification=17")->select();
 		return $data;
 	}
 

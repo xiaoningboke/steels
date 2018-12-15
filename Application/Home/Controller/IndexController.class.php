@@ -15,10 +15,9 @@ class IndexController extends CommonController  {
     	$zidong = $picture->findPicfore(4);
     	$juchuang = $picture->findPicfore(5);
     	$daojiao = $picture->findPicfore(6);
-    	$news = $article->selnews();
     	$zhishi = $article->selnews(6);
     	$dongtai = $article->selnews(7);
-
+        $redian = $article->selnews(17);
 
     	$this->assign('wufeng',$wufeng);
     	$this->assign('jingmi',$jingmi);
@@ -26,7 +25,7 @@ class IndexController extends CommonController  {
     	$this->assign('zidong',$zidong);
     	$this->assign('juchuang',$juchuang);
     	$this->assign('daojiao',$daojiao);
-    	$this->assign('news',$news);
+    	$this->assign('redian',$redian);
     	$this->assign('zhishi',$zhishi);
     	$this->assign('dongtai',$dongtai);
         $this->display();
